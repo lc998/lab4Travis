@@ -13,12 +13,12 @@ public class DateTimeTest {
 	@Test public void testToString() {
 		DateTime dtString = new DateTime(2018, 2, 31, 10, 0, 0);
 		
-		assertEquals("2018-02-31 10:00", dtString.toString());
+		assertEquals("2018-02-31 10:00:00", dtString.toString());
 	}
 
 	@Test public void testDateTimeString() {
 		DateTime dtString = new DateTime(2018, 2, 31, 10, 0, 0);
-		DateTime dtString2 = new DateTime("2018-02-31 10:00");
+		DateTime dtString2 = new DateTime("2018-02-31 10:00:00");
 
 		assertEquals(dtString2, dtString);
 		
